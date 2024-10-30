@@ -1,0 +1,23 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &__list {
+    width: 80%;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: #f2f2f2;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    &-item {
+      padding: 10px;
+    }
+  }
+}
+
+.dropdown.open .dropdown__list {
+  display: block;
+}
